@@ -1,0 +1,128 @@
+Crear una matriz 3D para almacenar datos de temperaturas
+# Primera dimensión: Ciudades (Ambato, Puyo, Quito)
+# Segunda dimensión: Semanas (4 semanas)
+# Tercera dimensión: Días de la semana (7 días)
+temperaturas = [
+    [   # Ambato 
+        [   # Semana 1
+            {"day": "Lunes", "temp": 66},
+            {"day": "Martes", "temp": 90},
+            {"day": "Miércoles", "temp": 84},
+            {"day": "Jueves", "temp": 69},
+            {"day": "Viernes", "temp": 55},
+            {"day": "Sábado", "temp": 98},
+            {"day": "Domingo", "temp": 32}
+        ],
+        [   # Semana 2
+            {"day": "Lunes", "temp": 74},
+            {"day": "Martes", "temp": 49},
+            {"day": "Miércoles", "temp": 53},
+            {"day": "Jueves", "temp": 31},
+              {"day": "Viernes", "temp": 27},  
+            {"day": "Sábado", "temp": 79},
+            {"day": "Domingo", "temp": 53}
+        ],
+        [   # Semana 3
+            {"day": "Lunes", "temp": 67},
+            {"day": "Martes", "temp": 81},
+            {"day": "Miércoles", "temp": 24},
+            {"day": "Jueves", "temp": 82},
+                {"day": "Viernes", "temp": 88},    
+            {"day": "Sábado", "temp": 91},
+            {"day": "Domingo", "temp": 95}
+        ],
+        [   # Semana 4
+            {"day": "Lunes", "temp": 75},
+            {"day": "Martes", "temp": 78},
+            {"day": "Miércoles", "temp": 80},
+            {"day": "Jueves", "temp": 79},
+                {"day": "Viernes", "temp": 84},    
+            {"day": "Sábado", "temp": 87},
+            {"day": "Domingo", "temp": 51}
+        ]
+    ],
+    [   # Puyo
+  [ ~ Semana 1  
+ {"día": "Lunes", "temp": 42}, 
+ {"día": "Martes", "temp": 84}, 
+ {"día": "Miércoles", "temp": 66}, 
+ {"día": "Jueves", "temp": 70}, 
+                      {"day": "Viernes", "temp": 43},          
+   {"día": "Sábado", "temp": 55},   
+ {"día": "Domingo", "temp": 39} 
+ ], 
+   [ ~ Semana 2   
+ {"día": "Lunes", "temp": 63}, 
+ {"día": "Martes", "temp": 36}, 
+ {"día": "Miércoles", "temp": 70}, 
+ {"día": "Jueves", "temp": 72}, 
+                       {"day": "Viernes", "temp": 95},           
+ {"día": "Sábado", "temp": 57}, 
+ {"día": "Domingo", "temp": 81} 
+ ], 
+ [ ~ Semana 3 
+ {"día": "Lunes", "temp": 61}, 
+ {"día": "Martes", "temp": 65}, 
+ {"día": "Miércoles", "temp": 68}, 
+ {"día": "Jueves", "temp": 70}, 
+                         {"day": "Viernes", "temp": 72},             
+ {"día": "Sábado", "temp": 76}, 
+ {"día": "Domingo", "temp": 80} 
+ ], 
+ [ ~ Semana 4 
+ {"día": "Lunes", "temp": 64}, 
+ {"día": "Martes", "temp": 67}, 
+ {"día": "Miércoles", "temp": 69}, 
+ {"día": "Jueves", "temp": 71}, 
+                         {"day": "Viernes", "temp": 74},             
+ {"día": "Sábado", "temp": 77}, 
+ {"día": "Domingo", "temp": 80} 
+ ] 
+ ], 
+ [ ~quito 
+ [ ~ Semana 1 
+ {"día": "Lunes", "temp": 30}, 
+ {"día": "Martes", "temp": 42}, 
+ {"día": "Miércoles", "temp": 94}, 
+ {"día": "Jueves", "temp": 51}, 
+                         {"day": "Viernes", "temp": 48},             
+ {"día": "Sábado", "temp": 15}, 
+ {"día": "Domingo", "temp": 82} 
+ ], 
+ [ ~ Semana 2 
+ {"día": "Lunes", "temp": 19}, 
+ {"día": "Martes", "temp": 31}, 
+ {"día": "Miércoles", "temp": 23}, 
+ {"día": "Jueves", "temp": 70}, 
+                         {"day": "Viernes", "temp": 67},             
+ {"día": "Sábado", "temp": 58}, 
+ {"día": "Domingo", "temp": 66} 
+ ], 
+ [ ~ Semana 3 
+ {"día": "Lunes", "temp": 43}, 
+ {"día": "Martes", "temp": 33}, 
+ {"día": "Miércoles", "temp": 75}, 
+ {"día": "Jueves", "temp": 92}, 
+                       {"day": "Viernes", "temp": 84},           
+ {"día": "Sábado", "temp": 26}, 
+ {"día": "Domingo", "temp": 63} 
+ ], 
+ [ ~ Semana 4 
+ {"día": "Lunes", "temp": 88}, 
+ {"día": "Martes", "temp": 90}, 
+ {"día": "Miércoles", "temp": 92}, 
+ {"día": "Jueves", "temp": 29}, 
+                      {"day": "Viernes", "temp": 86},          
+ {"día": "Sábado", "temp": 43}, 
+ {"día": "Domingo", "temp": 80} 
+ ] 
+ ] 
+]
+
+# Calcular el promedio de temperaturas para cada ciudad y semana
+for ciudad in temperaturas:
+              for semana in ciudad:          
+ suma = 0 
+ para dia en semana: 
+ suma += dia['temp'] 
+ impresión 
